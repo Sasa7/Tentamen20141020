@@ -4,10 +4,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CrimeHeadlineSystem.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class TestPolisenSE
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Test_Get_Headline_From_PolisenSe()
         {
         }
     }
