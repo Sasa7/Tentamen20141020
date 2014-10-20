@@ -20,6 +20,37 @@
         <elementDefinition Id="06d8321f-994e-4bb5-a70e-c53f0529e9e5" />
       </subsystem>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fc6e6b43-329a-4af3-9174-59863e3f8e8a" name="Criminal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="abc8371c-6273-4bf7-b4e9-414216df4214" />
+        <targetEnds>
+          <association Id="eaac7068-d847-4f4a-bdd1-efefe4c428e8" isDerived="false" sourceEndRoleName="Criminal" targetEndRoleName="Read Top Crimes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b0dce6d2-f50e-454a-a740-aa1f7fc5e913" LastKnownName="Read Top Crimes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07320378-eefb-47cd-9345-47900124d392" name="Criminal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fa78a75e-390e-4ba7-b6de-d8e695439078" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21d2da8a-3659-49c6-bf16-8145027b1235" name="Read Top Crimes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9a6a1cd7-3d94-4299-abd5-72f95cf68034" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="12efdc0e-992a-444c-80bc-5e802b6c6229" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="b0dce6d2-f50e-454a-a740-aa1f7fc5e913" name="Read Top Crimes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c88c2a0-1bd9-4d16-9ac2-97f9ca7ed328" />
+        <subjects>
+          <subsystemMoniker Id="9b92c9e6-e502-4044-9f40-f79f8d4431d5" LastKnownName="CrimeHeadlineSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="fff75d82-0c01-43de-8727-f54851c3963d" name="CrimeHeadlineSystem.Model">
     <elementDefinition Id="92d39dc3-2a0b-4775-b7a8-6f5c3c8a1dea" />

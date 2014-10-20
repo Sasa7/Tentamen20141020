@@ -26,6 +26,69 @@
         isLeaf="false"
         isActiveClass="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="abc8371c-6273-4bf7-b4e9-414216df4214"
+        name="Criminal"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="12efdc0e-992a-444c-80bc-5e802b6c6229"
+            isDerived="false"
+            sourceEndRoleName="Criminal"
+            targetEndRoleName="Read Top Crimes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1c88c2a0-1bd9-4d16-9ac2-97f9ca7ed328"
+              LastKnownName="Read Top Crimes"
+              LastKnownLocation="CrimeHeadlineSystem.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa78a75e-390e-4ba7-b6de-d8e695439078"
+                  name="Criminal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a6a1cd7-3d94-4299-abd5-72f95cf68034"
+                  name="Read Top Crimes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1c88c2a0-1bd9-4d16-9ac2-97f9ca7ed328"
+        name="Read Top Crimes"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="06d8321f-994e-4bb5-a70e-c53f0529e9e5"
+            LastKnownName="CrimeHeadlineSystem"
+            LastKnownLocation="CrimeHeadlineSystem.Model.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
