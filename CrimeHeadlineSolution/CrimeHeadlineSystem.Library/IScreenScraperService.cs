@@ -9,5 +9,6 @@ namespace CrimeHeadlineSystem.Library
     public interface IScreenScraperService
     {
         string GetHeadline();
+        void ReadTopCrime();
     }
 }

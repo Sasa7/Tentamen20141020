@@ -8,6 +8,6 @@ namespace CrimeHeadlineSystem.Library
 {
     public interface IScreenScraperFactory
     {
-        IScreenScraperService GetSite(string site);
+        IScreenScraperService GetScreenScraperType(string site, CrimeHeadlineSystemMediator mediator);
     }
 }

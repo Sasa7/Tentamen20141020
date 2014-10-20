@@ -39,16 +39,18 @@ namespace CrimeHeadlineSystem.Test
         [TestMethod]
         public void Test_Get_Headline_From_UtryckningSe()
         {
-            //
-            // TODO: Add test logic here
-            //
+            CrimeHeadlineSystemMediator mediator = new CrimeHeadlineSystemMediator();
+            IScreenScraperFactory factory = new ScreenScraperFactory();
+            IScreenScraperService polisService = factory.GetScreenScraperType("www.utryckning.se", mediator);
+            polisService.ReadTopCrime();
         }
 
         [TestMethod]
         public void Test_That_UtryckningService_Returns_Headline()
         {
+            CrimeHeadlineSystemMediator system = new CrimeHeadlineSystemMediator();
             var expectedHeadline = "Brand på Ahlstroms i Ställdalen";
-            IScreenScraperService service = new UtryckningScreenScraperService();
+            IScreenScraperService service = new UtryckningScreenScraperService(system);
             var headline = service.GetHeadline();
 
             Assert.AreEqual(expectedHeadline, headline);

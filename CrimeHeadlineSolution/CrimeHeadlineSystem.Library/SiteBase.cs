@@ -22,5 +22,13 @@ namespace CrimeHeadlineSystem.Library
 
         public abstract string ScrapeUrl { get; }
         public abstract string xPath { get; }
+
+        //public abstract void ReadTopCrime();
+
+
+
+        public virtual void ReadTopCrime()
+        {
+        }
     }
 }
