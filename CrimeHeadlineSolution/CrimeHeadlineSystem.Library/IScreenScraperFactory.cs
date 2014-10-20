@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CrimeHeadlineSystem.Library
 {
-    public interface IScreenScraperService
+    public interface IScreenScraperFactory
     {
-        string GetHeadline();
+        IScreenScraperService GetSite(string site);
     }
 }

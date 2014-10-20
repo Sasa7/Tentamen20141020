@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HtmlAgilityPack;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,20 @@ using System.Threading.Tasks;
 
 namespace CrimeHeadlineSystem.Library
 {
-    public class SiteBase: IScreenScraperService
+    public abstract class SiteBase: IScreenScraperService
     {
-        public string GetHeadlineBySiteName(string siteName)
+        public string GetHeadline()
         {
-            throw new NotImplementedException();
+            HtmlWeb htmlWeb = new HtmlWeb();
+            string url = string.Format(this.ScrapeUrl);
+            HtmlDocument htmlDocument = htmlWeb.Load(url);
+
+            HtmlNode headline = htmlDocument.DocumentNode.SelectSingleNode(this.xPath);
+
+            return headline.InnerHtml;
         }
+
+        public abstract string ScrapeUrl { get; }
+        public abstract string xPath { get; }
     }
 }
