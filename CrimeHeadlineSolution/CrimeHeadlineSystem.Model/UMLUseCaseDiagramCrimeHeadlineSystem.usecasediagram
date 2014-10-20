@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="034f4282-2ffb-4ccc-945c-b8a67690c832" name="UMLUseCaseDiagramCrimeHeadlineSystem" linkedPackageId="fff75d82-0c01-43de-8727-f54851c3963d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2d927f4e-f79a-4967-8155-e8e892f8dc24">
+      <profileInstance Id="10d58037-dffd-450d-9558-d2235e8ddfd9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f0b2c987-b204-41c6-a339-c4d22bb71f1e">
+      <profileInstance Id="86de9524-8551-4eb0-a127-a29efa88152c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9b92c9e6-e502-4044-9f40-f79f8d4431d5" name="CrimeHeadlineSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06d8321f-994e-4bb5-a70e-c53f0529e9e5" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fff75d82-0c01-43de-8727-f54851c3963d" name="CrimeHeadlineSystem.Model">
+    <elementDefinition Id="92d39dc3-2a0b-4775-b7a8-6f5c3c8a1dea" />
+  </package>
+</useCaseModelRoot>

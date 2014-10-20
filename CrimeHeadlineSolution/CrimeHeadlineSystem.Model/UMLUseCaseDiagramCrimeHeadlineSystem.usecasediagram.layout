@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagramCrimeHeadlineSystem">
+  <useCaseModelRootMoniker Id="034f4282-2ffb-4ccc-945c-b8a67690c832" />
+  <nestedChildShapes>
+    <SubsystemShape Id="46b7fbf1-83ef-427c-8288-ae0417e7de8c" absoluteBounds="3.25, 1, 3, 2.5" customColor="White">
+      <subsystemMoniker Id="9b92c9e6-e502-4044-9f40-f79f8d4431d5" LastKnownName="CrimeHeadlineSystem" />
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>
