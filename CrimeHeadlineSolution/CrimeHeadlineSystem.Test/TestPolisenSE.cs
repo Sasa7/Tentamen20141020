@@ -11,7 +11,7 @@ namespace CrimeHeadlineSystem.Test
         public void Test_Get_Headline_From_PolisenSe()
         {
             CrimeHeadlineSystemMediator mediator = new CrimeHeadlineSystemMediator();
-            IScreenScraperFactory factory = new ScreenScraperFactory();
+            IScreenScraperCreator factory = new ScreenScraperCreator();
             IScreenScraperService polisService = factory.GetScreenScraperType("www.polisen.se", mediator);
             polisService.ReadTopCrime();
         }

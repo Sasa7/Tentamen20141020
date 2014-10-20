@@ -40,7 +40,7 @@ namespace CrimeHeadlineSystem.Test
         public void Test_Get_Headline_From_UtryckningSe()
         {
             CrimeHeadlineSystemMediator mediator = new CrimeHeadlineSystemMediator();
-            IScreenScraperFactory factory = new ScreenScraperFactory();
+            IScreenScraperCreator factory = new ScreenScraperCreator();
             IScreenScraperService polisService = factory.GetScreenScraperType("www.utryckning.se", mediator);
             polisService.ReadTopCrime();
         }

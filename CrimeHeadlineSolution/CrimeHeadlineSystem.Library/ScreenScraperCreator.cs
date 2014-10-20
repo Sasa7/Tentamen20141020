@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrimeHeadlineSystem.Library
 {
-    public class ScreenScraperFactory: IScreenScraperFactory
+    public class ScreenScraperCreator: IScreenScraperCreator
     {
         public IScreenScraperService GetScreenScraperType(string site, CrimeHeadlineSystemMediator mediator)
         {
