@@ -15,18 +15,18 @@ namespace CrimeHeadlineSystem.Library
         internal void RegisterPolisService(PolisenScreenScraperService polisService)
         {
             polis = polisService;
-            service = polisService;
+            //service = polisService;
         }
 
         internal void RegisterUtryckningsService(UtryckningScreenScraperService utryckningService)
         {
             utryckning = utryckningService;
-            service = utryckningService;
+            //service = utryckningService;
         }
 
-        internal void FoundCrime()
+        internal void FoundCrime(string site, string title)
         {
-            Console.WriteLine(service.GetHeadline() + " " + service.ScrapeUrl);
+            Console.WriteLine(title + " " + site);
         }
     }
 }

@@ -27,7 +27,8 @@ namespace CrimeHeadlineSystem.Library
 
         public override void ReadTopCrime()
         {
-            mediator.FoundCrime();
+
+            mediator.FoundCrime(ScrapeUrl, base.GetHeadline());
         }
     }
 }
